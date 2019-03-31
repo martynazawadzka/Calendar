@@ -5,12 +5,14 @@ import "./index.css";
 
 import App from "./App";
 import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <BrowserRouter>
     <Route path="/" exact component={App} />
     <Route path="/login" component={LoginPage} />
+    <Route path="/register" component={RegisterPage} />
   </BrowserRouter>,
   document.getElementById("root")
 );
